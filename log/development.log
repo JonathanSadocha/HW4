@@ -1646,7 +1646,47 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 4497)
 
 
-Started GET "/" for ::1 at 2020-02-07 14:55:10 -0500
+Started GET "/" for ::1 at 2020-02-07 15:07:35 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 813)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 54.2ms | ActiveRecord: 0.0ms | Allocations: 9290)
+
+
+Started GET "/articles" for ::1 at 2020-02-07 15:07:36 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 3937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 28.8ms | ActiveRecord: 1.4ms | Allocations: 9894)
+
+
+Started GET "/" for ::1 at 2020-02-07 15:13:53 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 45.6ms | ActiveRecord: 0.0ms | Allocations: 8991)
+
+
+Started GET "/articles" for ::1 at 2020-02-07 15:13:57 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3940)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 14.3ms | ActiveRecord: 1.3ms | Allocations: 9659)
+
+
+Started GET "/" for ::1 at 2020-02-07 15:20:37 -0500
   
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
